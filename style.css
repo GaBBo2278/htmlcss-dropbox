@@ -90,16 +90,48 @@
     position: absolute;
     bottom: 20px;
 }
+
+.item::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 /* --------------FINE SEZIONE PIANI----------------*/
 
+/* ------------INIZIO SEZIONE PARTNER--------------*/
 .partner-container {
     background-color: lightgreen;
     height: 600px;   /* PROVVISORIO */
+    padding: 50px 0px;
 }
 
+#partner {
+    position: relative;
+}
+
+#partner-img{
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.partner-text {
+    border: 1px solid black;
+    margin-top: 30px;   /* DA CAMBIARE CON PADDING */
+    margin-left: 30px;  /* DA CAMBIARE CON PADDING */
+    width: 47%; /* DA CAMBIARE CON 50% */
+    height: 60%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+/* ------------FINE SEZIONE PARTNER--------------*/
+
+/* ----------INIZIO SEZIONE OPERAZIONI---------- */
 .operations-container {
     background-color: lightskyblue;
     height: 900px; /* PROVVISORIO */
+    padding: 50px 0px;
 }
 
 .team-container {
