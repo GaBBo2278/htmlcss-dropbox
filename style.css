@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    background-color: red;
+    height: 100px;  /* PROVVISORIO */
+    width: 100%;
+}
+
+.jumbotron { /* BISOGNA SPOSTARE L'IMMAGINE RISPETTO AL CONTAINER */
+    background-color: orange;
+    height: 800px;  /* PROVVISORIO */
+    width: 100%;
+}
+
+.plan-container {
+    background-color: yellow;
+    height: 900px; /* PROVVISORIO */
+}
+ 
+.partner-container {
+    background-color: lightgreen;
+    height: 600px;   /* PROVVISORIO */
+}
+
+.operations-container {
+    background-color: lightskyblue;
+    height: 900px; /* PROVVISORIO */
+}
+
+.team-container {
+    background-color: blue;
+    height: 800px;  /* PROVVISORIO */
+    width: 100%
+}
+
+.faq-container {
+    background-color: purple;
+    height: 700px;   /* PROVVISORIO */
+}
+
+.group-container {
+    background-color: pink;
+    height: 600px;   /* PROVVISORIO */
+}
