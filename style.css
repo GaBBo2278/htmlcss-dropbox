@@ -134,6 +134,40 @@
     padding: 50px 0px;
 }
 
+.operations-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.operations-title {
+    border: 1px solid black;
+    width: 100%;
+    height: 80px;
+}
+
+.operations-row {
+    border: 1px solid black;
+    margin: 40px 0px; /* DA CAMBIARE CON PADDING E DA CAMBIARE LA DIMENSIONE*/
+    width: 100%;
+    height: 40%;
+}
+
+.operation {
+    border: 1px solid black;
+    width: 30%;
+    height: 100%;
+    float: left;
+    margin: 0px 16px;
+}
+
+.operation-img {
+    border: 1px dotted black;
+    width: 100%;
+    height: 40%;
+}
+
+/* ----------FINE SEZIONE OPERAZIONI---------- */
 .team-container {
     background-color: blue;
     height: 800px;  /* PROVVISORIO */
@@ -148,7 +182,8 @@
     height: 700px;   /* PROVVISORIO */
 }
 
-.group-container {
+.group-list {
     background-color: pink;
     height: 600px;   /* PROVVISORIO */
+    width: 100%;
 }
