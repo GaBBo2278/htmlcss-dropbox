@@ -19,7 +19,7 @@
 }
 
 .btn {
-    padding: 3px 15px;
+    padding: 5px 15px;
 }
 
 .full{
@@ -37,6 +37,14 @@
     height: 100%;
     border: 2px solid black;
     margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bold-text {
+    font-weight: bold;
 }
 /* FINE ISTRUZIONI GENERALI */
 
@@ -66,7 +74,6 @@ nav ul li {
 }
 
 nav ul li a{
-    text-decoration: none;
     color: black;
     padding: 10px 0px;
 }
@@ -99,7 +106,6 @@ nav ul li img{
 }
 
 .jumbotron a {
-    text-decoration: none;
     display: inline-block;
     margin: 10px 0px;
 }
@@ -133,11 +139,10 @@ nav ul li img{
 
 .plan-container {
     margin-top: 200px;
-    height: 1200px; /* PROVVISORIO */
+    height: 1300px; /* PROVVISORIO */
 }
  
 .top-section {
-    border: 1px solid black;
     width: 100%;
     height: 100px;
     padding: 20px 0px;
@@ -147,7 +152,6 @@ nav ul li img{
 .billing {
     width: 100%;
     height: 70px;
-    border: 1px solid black;
 }
 
 .circle {
@@ -160,7 +164,7 @@ nav ul li img{
     margin-bottom: 5px;
 }
 
-.blue {
+#bcg-blue {
     border: 5px solid #0063f9;
 }
 
@@ -177,25 +181,36 @@ nav ul li img{
 }
 
 .item {
-    border: 1px solid black;
+    border: 1px solid lightgray;
     width: 30%; /* PROVVISORIO */
-    height: 800px; /* PROVVISORIO */
-    float: left;
-    margin: 16px; /* PROVVISORIO */
+    height: 900px; /* PROVVISORIO */
+}
+
+#center {
+    margin: 0px 50px;
 }
 
 .plan-category {
     width: 100%;
-    height: 5%;
-    border-bottom: 1px solid black;
+    height: 40px;
+    border-bottom: 1px solid lightgray;
     text-align: center;
     padding: 8px 0px;
 }
 
 .plan-content {
-    padding: 20px 20px;
-    font-size: 12px;
-    line-height: 30px;
+    padding: 30px;
+    font-size: 14px;
+    position: relative;
+}
+
+.plan-content > span {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.fas .fa-check .check {
+    color: #0061ff;
 }
 
 .plan-title {
@@ -203,12 +218,30 @@ nav ul li img{
     font-size: 18px;
 }
 
-.price {
+.sub-title {
     font-weight: bold;
-    margin-bottom: -6px;
+    margin-bottom: 6px;
 }
 
 .user-month {
+    margin-bottom: 40px;
+    color: gray;
+}
+
+.item-btn {
+    padding: 8px 30px;
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+}
+
+.buy-now {
+    padding-top: 20px;
+}
+
+.hr {
+    width: 15%;
+    border: 1px solid lightgray;
     margin-bottom: 20px;
 }
 
@@ -217,11 +250,26 @@ nav ul li img{
 }
 
 .bottom-section {
-    border: 1px solid black;
+    border: 1px solid lightgray;
     width: 100%;
-    height: 150px; /* PROVVISORIO */
+    height: 200px;
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
+}
+
+#hight-height{
+    height: 10%;
+}
+
+#enterprise-sub {
+    margin-bottom: 20px;
+}
+
+#enterprise-btn {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    padding: 5px 50px;
 }
 
 .plan-row::after {
