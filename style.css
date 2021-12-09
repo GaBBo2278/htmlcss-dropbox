@@ -325,42 +325,45 @@ nav ul li img{
 
 /* ----------INIZIO SEZIONE OPERAZIONI---------- */
 .operations-container {
-    background-color: lightskyblue;
-    height: 900px; /* PROVVISORIO */
+    height: 1300px;
     padding: 50px 0px;
 }
 
-.operations-container::after {
+.operations-title {
+    width: 100%;
+    height: 80px;
+    font-size: 34px;
+    line-height: 70px;
+}
+
+.operations-row {
+    margin: 40px 0px; /* DA CAMBIARE CON PADDING E DA CAMBIARE LA DIMENSIONE*/
+    width: 100%;
+    height: 500px;
+}
+
+.operations-row::after {
     content: "";
     display: table;
     clear: both;
 }
 
-.operations-title {
-    border: 1px solid black;
-    width: 100%;
-    height: 80px;
-}
-
-.operations-row {
-    border: 1px solid black;
-    margin: 40px 0px; /* DA CAMBIARE CON PADDING E DA CAMBIARE LA DIMENSIONE*/
-    width: 100%;
-    height: 40%;
-}
-
 .operation {
-    border: 1px solid black;
     width: 30%;
     height: 100%;
     float: left;
-    margin: 0px 16px;
+    margin: 0px 10px;
 }
 
 .operation-img {
-    border: 1px dotted black;
     width: 100%;
-    height: 40%;
+    height: 45%;
+    object-fit: cover;
+}
+
+.operation-title {
+    font-size: 24px;
+    padding: 16px 0px;
 }
 /* ----------FINE SEZIONE OPERAZIONI---------- */
 
