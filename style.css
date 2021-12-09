@@ -281,8 +281,7 @@ nav ul li img{
 
 /* ------------INIZIO SEZIONE PARTNER--------------*/
 .partner-container {
-    background-color: lightgreen;
-    height: 600px;   /* PROVVISORIO */
+    height: 600px;   
     padding: 50px 0px;
 }
 
@@ -293,18 +292,34 @@ nav ul li img{
 #partner-img{
     width: 50%;
     height: 100%;
-    border: 1px solid black;
+    object-fit: cover;
+}
+
+.partner-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+#partner-btn {
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid lightgray;
+    color: black;
+    display: inline-block;
 }
 
 .partner-text {
-    border: 1px solid black;
-    margin-top: 30px;   /* DA CAMBIARE CON PADDING */
-    margin-left: 30px;  /* DA CAMBIARE CON PADDING */
-    width: 47%; /* DA CAMBIARE CON 50% */
+    margin-top: 30px;   
+    margin-left: 30px;  
+    width: 47%; 
     height: 60%;
     position: absolute;
     top: 0px;
     right: 0px;
+}
+
+.partner-text > p {
+    line-height: 25px;
 }
 /* ------------FINE SEZIONE PARTNER--------------*/
 
