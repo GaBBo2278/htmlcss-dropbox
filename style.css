@@ -25,7 +25,6 @@
 .full{
     border: 2px solid black;
     width: 90%;
-    height: 100%;
     margin: auto;
     padding-top: 20px;
     padding-bottom: 50px;
@@ -34,7 +33,6 @@
 
 .master {
     width: 80%;
-    height: 100%;
     border: 2px solid black;
     margin: auto;
 }
@@ -49,6 +47,10 @@ a {
 
 #center {
     margin: 0px 50px;
+}
+
+.underline-text {
+    text-decoration: underline;
 }
 /* FINE ISTRUZIONI GENERALI */
 
@@ -367,7 +369,6 @@ nav ul li img{
 
 /* ------------INIZIO SEZIONE TEAM---------- */
 .team-container {
-    height: 80vh;  /* PROVVISORIO */
     width: 100%
 }
 
@@ -376,8 +377,6 @@ nav ul li img{
     line-height: 50px;
 }
 #up-container {
-    border: 1px solid black;
-    height: 10vw;
     width: 40%;
     padding: 15px 0px;
     margin-left: 10%;
@@ -386,12 +385,9 @@ nav ul li img{
 #up-container a {
     padding: 20px 0px;
     display: inline-block;
-    text-decoration: initial;
 }
 
 .middle-container {
-    border: 1px solid black;
-    height: 60vw;
     width: 100%;
 }
 
@@ -401,30 +397,98 @@ nav ul li img{
     clear: both;
 }
 .side {
-    border: 1px dotted black;
-    width: 30%;
+    width: 30vw;
     height: calc(100%-30vw);
     float: left;
 }
 .team-item {
-    border: 2px solid black;
-    float: left;
     height: 15vw;
     width: 50%;
     text-align: center;
     line-height: 15vw;
+    position: relative;
+}
+
+.team-item img {
+    height: 100%;
+    width: 50%;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+#lightgreen{
+    background-color: #a2d39b;
+}
+
+#brown{
+    background-color: #61082b;
+}
+
+#azure{
+    background-color: #0093ce;
+}
+
+#lightred{
+    background-color: #ff1c1c;
+}
+
+#red{
+    background-color: #d5001f;
+}
+
+#lightblue{
+    background-color: #b4d0e7;
+}
+
+#blue{
+    background-color: #0d2481;
+}
+
+#yellow {
+    background-color: #ffd830;
 }
 
 .center {
-    border: 1px dotted black;
-    width: 40%;
-    height: 30vw;
-    float: left; 
+    background-color: #f5f5f5;
+    width: calc(100% - 60vw);
+    height: 30vw; 
+    overflow: auto;
+    padding: 30px;
 }
 
-#down-container { /* VA POSIZIONATO IN BASSO */
+.center img {
+    width: 10vw;
+    padding-bottom: 30px;
+}
+
+.center p {
+    margin: 30px 0px;
+}
+
+#down-container {
     border: 1px dotted black;
-    height: 30vw;
+    background-color: #b0cfe5 ;
+}
+
+#content {
+    position: relative;
+    padding: 80px 0px;
+}
+
+.down-title{
+    width: 50%;
+    font-size: 34px;
+    line-height: 50px;
+    color: #61082b;
+}
+
+#down-btn {
+    background-color: white;
+    border: 1px solid lightgray;
+    color: black;
+    position: absolute;
+    top: 80px;
+    right: 80px;
 }
 /* -------------FINE SEZIONE TEAM----------- */
 
