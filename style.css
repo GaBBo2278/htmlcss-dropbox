@@ -23,18 +23,15 @@
 }
 
 .full{
-    border: 2px solid black;
     width: 90%;
     margin: auto;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    position: relative;
+    max-width: 1180px;
 }
 
 .master {
     width: 80%;
-    border: 2px solid black;
     margin: auto;
+    max-width: 1180px;
 }
 
 a {
@@ -52,6 +49,10 @@ a {
 .underline-text {
     text-decoration: underline;
 }
+
+li {
+    list-style: none;
+}
 /* FINE ISTRUZIONI GENERALI */
 
 /* INIZIO ISTRUZIONI MENU NAVIGAZIONE */
@@ -60,7 +61,8 @@ a {
     height: 50px;
     width: 100%;
     font-size: 12pt;
-    /* position: fixed; */
+    position: fixed;
+    z-index: 999;
 }
 
 .navigation::after {
@@ -84,6 +86,10 @@ nav ul li a{
     padding: 10px 0px;
 }
 
+nav ul li a:hover{
+    border-bottom: 2px solid lightgray;
+}
+
 nav ul li img{
     vertical-align: middle;
     margin-bottom: 5px;
@@ -94,6 +100,7 @@ nav ul li img{
     background-color: #b4d0e7;
     width: 100%;
     position: relative;
+    padding-top: 20px;
 }
 
 #title {
@@ -144,8 +151,7 @@ nav ul li img{
 /* --------------INIZIO SEZIONE PIANI----------------*/
 
 .plan-container {
-    margin-top: 200px;
-    height: 1300px; /* PROVVISORIO */
+    margin-top: 150px;
 }
  
 .top-section {
@@ -188,8 +194,8 @@ nav ul li img{
 
 .item {
     border: 1px solid lightgray;
-    width: 30%; /* PROVVISORIO */
-    height: 900px; /* PROVVISORIO */
+    width: 30%; 
+    height: 900px; 
 }
 
 .plan-category {
@@ -211,7 +217,7 @@ nav ul li img{
     margin-bottom: 20px;
 }
 
-.fas .fa-check .check {
+.fa-check{
     color: #0061ff;
 }
 
@@ -254,9 +260,7 @@ nav ul li img{
 .bottom-section {
     border: 1px solid lightgray;
     width: 100%;
-    height: 200px;
-    position: absolute;
-    bottom: 0px;
+    margin: 40px 0px;
 }
 
 #hight-height{
@@ -282,9 +286,8 @@ nav ul li img{
 /* --------------FINE SEZIONE PIANI----------------*/
 
 /* ------------INIZIO SEZIONE PARTNER--------------*/
-.partner-container {
-    height: 600px;   
-    padding: 50px 0px;
+.partner-container { 
+    margin: 50px 0px;
 }
 
 #partner {
@@ -333,7 +336,6 @@ nav ul li img{
 
 .operations-title {
     width: 100%;
-    height: 80px;
     font-size: 34px;
     line-height: 70px;
 }
@@ -466,7 +468,6 @@ nav ul li img{
 }
 
 #down-container {
-    border: 1px dotted black;
     background-color: #b0cfe5 ;
 }
 
@@ -492,30 +493,68 @@ nav ul li img{
 }
 /* -------------FINE SEZIONE TEAM----------- */
 
-
-.faq-container {
-    background-color: purple;
-    height: 40vw;   /* PROVVISORIO */
+/* -------------INIZIO SEZIONE FAQ---------- */
+#faq { 
+    padding: 50px 0px;
 }
 
-/* #faq { DA CAMBIARE CON PADDING
-    margin: 50px auto;
-} */
-
 .faq-title {
-    border: 1px solid black;
-    width: 100%;
-    height: 5vw;
-    margin: 50px 0px; /* DA CAMBIARE CON PADDING */
+    font-size: 24px;
+    padding: 30px 0px;
+    border-bottom: 1px solid lightgray;
 }
 
 .faq-row {
-    border: 1px dotted black;
+    border-bottom: 1px solid lightgray;
     width: 100%;
-    margin: 20px 0px; /* DA CAMBIARE CON PADDING */
+    padding: 25px 0px;
+    font-size: 14px;
 }
+
+.faq-row h4 {
+    width: 95%;
+    display: inline-block;
+}
+/* -------------FINE SEZIONE FAQ---------- */
+/* -----------INIZIO SEZIONE LISTE-------- */
 .group-list {
-    background-color: pink;
-    height: 600px;   /* PROVVISORIO */
-    width: 100%;
+    background-color: black;
+    padding: 3% 0px;
 }
+ 
+.group-col {
+    width: calc(100% / 5);
+    line-height: 22px;
+    margin-bottom: 50px;
+}
+
+.group-row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.group-col ul li a, .group-col h4 {
+    color: white;
+}
+
+.group-col h4{
+    margin-bottom: 15px;
+}
+
+.group-col ul li a {
+    font-size: 12px;
+}
+
+.group-col ul li a:hover{
+    border-bottom: 1px solid lightgray;
+}
+
+.lang {
+    border-top: 1px solid lightgray;
+    padding-top: 20px;
+    color: lightgray;
+    font-size: 10px;
+    display: inline-block;
+}
+/* -----------FINE SEZIONE LISTE-------- */
